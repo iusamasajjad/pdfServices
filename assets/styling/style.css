@@ -1,0 +1,76 @@
+/* media quries for all devices */
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+body{
+    font-family: sansation-light;
+}
+
+/* =========== hero-section-styling ========= */
+.hero-bg{
+    background-image: url('../images/header-blue.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-bg{
+    background: linear-gradient(217.38deg, #003366 1.9%, #003E7B 48.48%, #003F7D 97.62%);
+    background-position: left;
+}
+.service-bg{
+    background: linear-gradient(217.38deg, #003366 1.9%, #003E7B 48.48%, #003F7D 97.62%);
+    background-position: right;
+}
+
+
+/* common-classes */
+@font-face {
+    font-family: sansation-light;
+    src: url('../font/Sansation_Light.ttf');
+}
+.z-1{
+    z-index: -1;
+}
+.text-orange{
+    color:  #FF6600;
+}
+.text-gray{
+    color: #494A4F ;
+}
+.text-blue{
+    color:  #002040;
+}
+.active-orange{
+    border-radius: 100%;
+    height: 5px;
+    width: 5px;
+    left: 29px;
+    right: 0;
+    top: 35px;
+    bottom: 0px;
+    background-color: #FF6600;
+}
+.bg-orange{
+    background-color: #FF6600;
+}
+.z-2{
+    z-index: 1;
+}
+.overlay{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    z-index: 1;
+    background-color: #FF6600;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {}

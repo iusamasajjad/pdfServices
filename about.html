@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./assets/styling/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- ================ Navbar ================ -->
+    <div>
+        <nav class="z-2 relative">
+            <div class="mx-auto container px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
+                        <!-- Mobile menu button-->
+                        <button onclick="menuToggle()" type="button"
+                            class="inline-flex items-center justify-center rounded-md p-2 text-white bg-orange-500 hover:bg-orange-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                            <svg class="block h-6 text-white bg-orange-500  w-6" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-between sm:justify-start">
+                        <div class="flex flex-shrink-0 items-center">
+                            <img class="block h-8 w-auto absolute right-0 ml-16 lg:hidden"
+                                src="./assets/images/logo.png" alt="Your Company"> 
+                                <img class="hidden h-8 w-auto lg:block" src="./assets/images/logo.png" alt="Your Company">
+                        </div>
+
+                    </div>
+                    <div class="hidden sm:ml-6 lg:block">
+                        <div class="flex space-x-8">
+                            <div class="flex relative items-center">
+                                <a href="./home.html"
+                                    class="text-black font-semibold mx-3 py-2 rounded-md text-sm font-medium">Home</a>
+                            </div>
+                            <a href="./services.html"
+                                class="text-black font-semibold py-2 rounded-md text-sm font-medium">Services</a>
+
+                            <div class="flex relative items-center">
+                                <a href="./about.html"
+                                    class="text-black font-semibold mx-3 py-2 rounded-md text-sm font-medium">About</a>
+                                <div class="active-orange absolute"></div>
+                            </div>
+
+                            <a href="./contactus.html"
+                                class="text-black font-semibold py-2 rounded-md text-sm font-medium">Contact</a>
+                            <a href="#" class="bg-blue-900 text-white px-3 py-2 rounded-md text-sm font-medium">Let’s
+                                Go</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="">
+                <div class=" text-center mt-4 overlay" id="mobile-menu">
+                    <a href="javascript:void(0)" onclick="menuClose()"
+                        class="closebtn text-6xl absolute top-4 right-4 mr-10 font-semibold text-white ">&times;</a>
+                    <div class="space-y-1 mt-16 px-2 pt-2 pb-3">
+                        <a href="./home.html"
+                            class="hover:bg-gray-900 text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                            aria-current="page">Home</a>
+
+                        <a href="./services.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+
+                        <a href="./about.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+
+                        <a href="./contactus.html"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- =================== Hero-section ======================= -->
+        <div class="about-bg mt-10 lg:w-4/5">
+            <div class="container mx-auto px-2 sm:px-6 lg:px-16">
+                <div class="flex lg:flex-row flex-col-reverse justify-between items-center">
+                    <div class="lg:w-3/5 lg:py-16 my-5">
+                        <p class="text-white font-semibold text-center lg:text-start lg:w-9/12  pr-4">We believe the key
+                            to providing the best
+                            delivery service is
+                            to be seen as little as possible.
+                            <br>
+                            <br>
+                            Receiving, dispatching and loading as fast and efficiently as possible - all the while
+                            handling your goods with the utmost care and consideration.
+                        </p>
+                    </div>
+                    <div class="lg:absolute right-0 top-0 lg:w-2/5">
+                        <div class="flex justify-between items-center py-5">
+                            <div>
+                                <img class="lg:w-3/4 lg:pb-16 lg:py-16 lg:pt-32 right-0 lg:left-16 relative"
+                                    src="./assets/images/delivery-box.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============== blog-section =========== -->
+        <section>
+            <div class="container mt-10 px-6 py-10 mx-auto">
+
+                <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                    <div class="object-cover flex lg:justify-end justify-center w-full lg:mx-6 lg:w-1/2">
+                        <img class=" rounded-xl h-72 lg:h-96" src="./assets/images/men-with-box.png" alt="">
+                    </div>
+
+                    <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+                        <p class="block mt-4 text-center lg:text-start text-2xl font-bold text-blue   md:text-4xl">
+                            Who we are
+                        </p>
+
+                        <p class="mt-3 text-sm lg:w-10/12 text-center lg:text-start font-bold text-gray md:text-sm">
+                            At PDF Services, we believe that professionalism and promptness are key. We understand that
+                            when you need something delivered quickly and professionally, there is no room for
+                            compromise. That's why we strive to provide the best same-day delivery service in the
+                            industry. Our couriers are fully uniformed, so you can always trust that your package is
+                            being handled with care and attention.
+                            <br>
+                            <br>
+                            We also offer API software for order entry that is quickly dispatched and optimized in
+                            making it easy to get your package delivered fast and efficiently.
+                            <br>
+                            <br>
+                            At PDF Services, we put our customers first and we strive to make sure that every delivery
+                            is done right and on time. So when you need something delivered quickly and professionally,
+                            trust PDF Services for same-day delivery!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================== cards-section ======================= -->
+
+        <div class="container px-6 py-10 mx-auto">
+
+            <div class="flex flex-col items-center justify-center">
+                <p class="mt-4 text-2xl font-bold text-blue md:text-4xl">
+                    Our Values
+                </p>
+            </div>
+            <div class="flex justify-center py-5">
+                <p class="text-gray font-semibold text-center lg:w-1/2">At PDF Services, we utilize a core set of
+                    beliefs
+                    to guide us in
+                    our actions to achieve the highest-quality service available.</p>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex flex-wrap lg:flex-nowrap justify-center">
+                    <div class="max-w-sm m-5 p-6 bg-white  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" src="./assets/images/flower.png"
+                            alt="" />
+                        <h5 class="mb-2 text-2xl font-semibold py-4 tracking-tight text-gray-900 dark:text-white">
+                            Customer-first mentality</h5>
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Our customer-first approach sets us
+                            apart from our competitors. The same-day delivery industry is crowded with services that
+                            don't value the goods they deliver, or the businesses they affect. A delivery service that
+                            values your money above all else will always let you down. We make it our priority to deeply
+                            understand everything we need to know about you and your business. With us, you know you're
+                            in good hands.</p>
+                    </div>
+                    <div class="max-w-sm m-5 p-6 bg-white  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" src="./assets/images/flower.png"
+                            alt="" />
+                        <h5 class="mb-2 text-2xl font-semibold py-4 tracking-tight text-gray-900 dark:text-white">
+                            Professionalism</h5>
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Operating with the utmost level of
+                            professionalism is fundamental to our service. Every aspect of our courier operation is
+                            executed with expert care, high-quality equipment and only the best customer service. Our
+                            expert courier staff always operate with our recognizable uniform, and present themselves as
+                            best they can. When you use PDF Services, you know you're receiving a professional, 5-star
+                            service.</p>
+                    </div>
+                    <div class="max-w-sm m-5 p-6 bg-white  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" src="./assets/images/flower.png"
+                            alt="" />
+                        <h5 class="mb-2 text-2xl font-semibold py-4 tracking-tight text-gray-900 dark:text-white">Pros
+                            Delivering it Fast</h5>
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Most importantly, we're fast and
+                            accurate. PDF Services will guarantee your delivery is there when promised, every time. When
+                            it comes to delivering products, we're the best available. Utilizing cutting-edge
+                            technology, and years of experience - our service is unbeatable. Most importantly, we're
+                            fast and accurate. PDF Services will guarantee your delivery is there when promised, every
+                            time. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ============================ contactUs-section ====================== -->
+        <div class="bg-orange py-10">
+            <div>
+                <h2 class="text-white text-4xl text-center font-bold">Contact Us</h2>
+                <div class="flex justify-center py-5">
+                    <p class="text-white text-center lg:w-1/2">If you're ready to take your business to the next level,
+                        get
+                        in contact with us today to find out how
+                        we can help you.</p>
+                </div>
+                <div class="flex justify-center">
+                    <form class="bg-white rounded-xl shadow relative top-32 lg:w-1/3 w-4/5 p-5" action="">
+                        <div class="my-3">
+                            <input placeholder="Full Name"
+                                class="px-4 py-2 w-full rounded-lg border border-gray-700 outline-none" type="text">
+                        </div>
+                        <div class="my-3">
+                            <input placeholder="Email Address"
+                                class="px-4 w-full py-2 rounded-lg border border-gray-700 outline-none" type="email">
+                        </div>
+                        <div class="my-3 pb-4">
+                            <textarea placeholder="Message" rows="5"
+                                class="px-4 w-full py-2 rounded-lg border border-gray-700 outline-none"></textarea>
+                        </div>
+                        <div style="bottom: -20px;" class="flex pt-4 absolute bottom-0 right-0 left-0 justify-center">
+                            <button class="p-3 bg-blue-800 px-6 rounded text-white">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- =================== footer ===================== -->
+
+        <footer class="mx-auto container px-2 sm:px-6 lg:px-8">
+            <div class="mt-32 flex justify-center lg:justify-start">
+                <img src="./assets/images/logo.png" alt="logo">
+            </div>
+            <div class="flex lg:flex-row flex-col justify-between lg:items-end py-5">
+                <div class="lg:w-1/4 lg:text-start text-center">
+                    <p>Your same-day delivery specialists that specializes in time commitment deliveries. </p>
+                </div>
+                <nav>
+                    <div class="flex mt-3 lg:mt-0 justify-center lg:justify-start space-x-4">
+                        <a href="./home.html">Home</a>
+                        <a href="./services.html">Service</a>
+                        <a href="./about.html">About</a>
+                        <a href="./contactus.html">Contact</a>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="h-px bg-gray-800 w-full"></div>
+            <div class="flex justify-between py-6">
+                <p>All Right reserved</p>
+                <div class="space-x-4 flex pb-4">
+                    <img src="./assets/images/twitter.png" alt="twitter">
+                    <img src="./assets/images/instagram.png" alt="twitter">
+                    <img src="./assets/images/youtube.png" alt="twitter">
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script>
+        function menuToggle() {
+            var x = document.getElementById("mobile-menu");
+            x.style.width = "100%";
+        }
+        function menuClose() {
+            var x = document.getElementById("mobile-menu");
+            x.style.width = "0%";
+        }
+    </script>
+
+</body>
+
+</html>
